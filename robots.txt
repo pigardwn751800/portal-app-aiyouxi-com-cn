@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pigardwn751800.github.io/portal-app-aiyouxi-com-cn/sitemap.xml

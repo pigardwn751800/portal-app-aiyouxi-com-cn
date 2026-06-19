@@ -1,2 +1,32 @@
-# portal-app-aiyouxi-com-cn
-爱游戏 - https://portal-app-aiyouxi.com.cn
+# 爱游戏 - 游戏综合服务平台
+
+## 简介
+
+爱游戏（[https://portal-app-aiyouxi.com.cn](https://portal-app-aiyouxi.com.cn)）是一个面向游戏玩家的综合性服务平台。该平台致力于为用户提供游戏资讯、社区互动、工具下载等多元服务，帮助玩家更便捷地获取游戏相关内容。
+
+通过访问 [https://portal-app-aiyouxi.com.cn](https://portal-app-aiyouxi.com.cn)，用户可以进入爱游戏的主门户，探索与游戏相关的各类资源。
+
+## 特点
+
+- **资讯聚合**：爱游戏平台汇总了多款热门游戏的新闻、攻略和更新动态，方便玩家一站式了解游戏圈新鲜事。
+- **社区交流**：平台提供讨论区或社交功能，玩家可以在此分享心得、组队或参与活动。
+- **工具支持**：爱游戏可能提供游戏辅助工具、启动器或资源下载，帮助提升游戏体验。
+- **界面简洁**：门户设计注重易用性，用户能快速找到所需内容。
+
+## 访问方式
+
+直接通过浏览器访问以下链接即可进入爱游戏平台：
+
+[https://portal-app-aiyouxi.com.cn](https://portal-app-aiyouxi.com.cn)
+
+建议使用最新版本的 Chrome、Edge 或 Firefox 浏览器以获得最佳体验。
+
+## 注意事项
+
+- 请通过官方渠道访问爱游戏，避免使用第三方镜像或非正式链接。
+- 平台内容及服务由运营方提供，使用前请阅读相关服务条款。
+- 如遇到访问问题，可检查网络连接或联系平台客服。
+
+## 关于本项目
+
+本 README 仅用于介绍爱游戏平台（[https://portal-app-aiyouxi.com.cn](https://portal-app-aiyouxi.com.cn)）的基本信息，不包含任何推广或商业意图。如需了解更详细的功能，请直接访问官网。

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 专题介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fafbfc;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        /* hero */
+        .hero {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.8rem;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #64748b;
+            background: #f1f5f9;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            margin-top: 0.3rem;
+        }
+        .hero .desc {
+            margin-top: 1.2rem;
+            font-size: 1.05rem;
+            color: #334155;
+        }
+
+        /* 正文卡片 */
+        .section {
+            margin-bottom: 2.8rem;
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 0.75rem;
+        }
+        .section p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #1e293b;
+        }
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .quiet-note {
+            background: #f8fafc;
+            padding: 1.2rem 1.5rem;
+            border-radius: 12px;
+            margin: 1.8rem 0 1.2rem;
+            border: 1px solid #e9edf2;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+        .quiet-note strong {
+            color: #0f172a;
+        }
+
+        blockquote {
+            border-left: 3px solid #94a3b8;
+            padding-left: 1.2rem;
+            margin: 1.4rem 0;
+            color: #475569;
+            font-style: normal;
+            font-size: 0.98rem;
+        }
+
+        /* 尾部 */
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+            color: #475569;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.3rem 0.5rem;
+        }
+        .footer-note a {
+            color: #1e293b;
+            text-decoration: none;
+            border-bottom: 1px solid #94a3b8;
+            padding-bottom: 1px;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 500;
+        }
+        .footer-note a:hover {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+        .footer-note .muted {
+            color: #94a3b8;
+            margin-left: auto;
+        }
+
+        /* 响应式 */
+        @media (max-width: 500px) {
+            .container {
+                padding: 1.8rem 1.2rem 3rem;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+        /* 极简点缀 */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- hero -->
+        <div class="hero">
+            <h1>爱游戏</h1>
+            <div class="sub">杂志专题 · 回访与收藏</div>
+            <p class="desc">
+                这不是一份临时的介绍。整理的初衷，是希望再次来到这里时，依然能快速找到熟悉的位置。
+                如果你此前曾打开过「<strong>爱游戏</strong>」的页面，或许会觉得下面这些记录有些用处。
+            </p>
+        </div>
+
+        <!-- 第一部分：为什么再次访问 -->
+        <div class="section">
+            <h2>再访 · 熟悉感</h2>
+            <p>
+                一个网站被记住，往往不是因为它的第一次亮相，而是因为第二次、第三次访问时那种无需重新适应的自然。
+                <strong>爱游戏</strong> 的界面结构偏向实用路线：主功能区域清晰，入口收敛，没有频繁变动的冗余模块。
+                这对再次访问的人来说，意味着更少的认知负担。
+            </p>
+            <p>
+                如果你之前已经浏览过一些内容，这次回来可能不会感到陌生。页面布局延续了之前的逻辑，主要分类和导航位置保持稳定。
+                这种「不变」本身，就是一种对回头客的照顾。
+            </p>
+        </div>
+
+        <!-- 第二部分：收藏与持续关注 -->
+        <div class="section">
+            <h2>收藏 · 作为标记</h2>
+            <p>
+                把网站加入书签，本质上是一种「我还会再来」的轻微承诺。收藏夹里的条目会随着时间沉淀，有些被遗忘，有些则反复点开。
+                在浏览器书签栏或笔记工具里保留「爱游戏」的位置，相当于给自己留了一个可回溯的入口——不必依赖搜索引擎，也不必重复记忆链接。
+            </p>
+            <p>
+                持续关注一件事，往往始于一个简单的收藏动作。不需要时刻刷新，只要知道那个页面还在，并且保持可访问的状态，就足够了。
+            </p>
+            <blockquote>
+                “收藏不是囤积，而是为未来的自己留一条近路。”
+            </blockquote>
+            <p>
+                从实际体验来看，<strong>爱游戏</strong> 的页面加载速度稳定，内容更新频率适中，不会给人被信息轰炸的感觉。
+                这种节奏很适合放在收藏夹里，隔段时间再回来看看。
+            </p>
+        </div>
+
+        <!-- 第三部分：日常场景与使用提示 -->
+        <div class="section">
+            <h2>场景 · 何时会用到</h2>
+            <p>
+                有时候打开一个网站，只是想确认某个功能是否还在，或者单纯地浏览一下最近有没有新增什么内容。
+                没有明确目的，反而让访问变得更轻松。<strong>爱游戏</strong> 的使用场景里，这种「随意看看」占据了相当比例。
+            </p>
+            <p>
+                另外，如果你之前在某次浏览中留意到了某个模块，但当时没有细看，那么再次访问时就可以直接深入。
+                页面没有设置强制弹窗或过度引导，这一点在实际使用中比较友好。
+            </p>
+            <div class="quiet-note">
+                <strong>一个小提示：</strong> 如果你习惯用浏览器书签管理工具，建议为「爱游戏」单独建一个文件夹或标签组。
+                这样即便链接收藏较多，也能在几秒内定位到。不需要每次都从首页重新开始。
+            </div>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <div class="section">
+            <h2>常见印象 · 简要整理</h2>
+            <p>
+                <strong>Q：</strong> 是否需要登录或注册才能浏览？<br>
+                <strong>A：</strong> 根据目前公开页面，访问基础内容不需要登录。部分互动功能可能需要账号，但这不属于浏览的主要障碍。
+            </p>
+            <p>
+                <strong>Q：</strong> 页面是否适配移动设备？<br>
+                <strong>A：</strong> 在手机浏览器上显示正常，排版和字号没有明显的适配问题，纵向阅读体验流畅。
+            </p>
+            <p>
+                <strong>Q：</strong> 内容更新频率如何？<br>
+                <strong>A：</strong> 不是日更型站点，更新节奏平缓，更适合阶段性回顾而不是每日追踪。
+            </p>
+            <p style="margin-top: 1.2rem; font-size: 0.95rem;">
+                以上是基于长期使用视角的客观描述。如果你已经收藏了 <a href="https://portal-app-aiyouxi.com.cn">爱游戏</a>，但愿这些记录能帮你更快地进入状态。
+            </p>
+        </div>
+
+        <!-- 尾部：访问提示 -->
+        <div class="footer-note">
+            <span>再次访问 ·</span>
+            <span>直接前往 </span>
+            <a href="https://portal-app-aiyouxi.com.cn">爱游戏</a>
+            <span class="muted">· 页面稳定，适合收藏</span>
+        </div>
+
+        <!-- 静谧的留白 -->
+        <hr>
+        <p style="font-size: 0.8rem; color: #94a3b8; text-align: right; margin-top: 0.5rem;">
+            — 专题介绍 · 基于实际访问体验整理 —
+        </p>
+    </div>
+</body>
+</html>
