@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>1xbet · 简明访问导览</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f6fafc;
+      color: #1a2e35;
+      line-height: 1.6;
+      padding: 24px 16px 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 780px;
+      width: 100%;
+    }
+
+    /* 开场短句 – 细腻蓝绿渐变 */
+    .opening {
+      font-size: 1.8rem;
+      font-weight: 350;
+      letter-spacing: 0.02em;
+      background: linear-gradient(135deg, #1a7a7a, #2b9e9e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 1.2rem 0 0.6rem;
+      padding: 0.4rem 0;
+      border-bottom: 3px solid rgba(42, 157, 143, 0.25);
+      display: inline-block;
+    }
+
+    .opening em {
+      font-style: normal;
+      background: linear-gradient(135deg, #0f7c7c, #3bb0a0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 420;
+    }
+
+    /* 承接段落 */
+    .intro {
+      background: #ffffff;
+      padding: 1.5rem 1.8rem;
+      border-radius: 28px;
+      box-shadow: 0 8px 20px rgba(0, 40, 40, 0.04), 0 2px 6px rgba(18, 110, 110, 0.06);
+      margin: 1.6rem 0 2rem;
+      border-left: 6px solid #2b9e9e;
+      font-size: 1.05rem;
+      color: #1f3e44;
+    }
+
+    .intro p {
+      margin-bottom: 0.9rem;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .intro a {
+      color: #157a7a;
+      text-decoration: none;
+      font-weight: 540;
+      border-bottom: 1px dashed #48b3b3;
+      transition: border 0.15s, color 0.15s;
+    }
+
+    .intro a:hover {
+      color: #0e5f5f;
+      border-bottom: 1px solid #157a7a;
+    }
+
+    /* 特点网格卡片 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin: 2rem 0 2rem;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 1.6rem 1.2rem;
+      box-shadow: 0 6px 16px rgba(0, 60, 60, 0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #e2f0f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15, 110, 110, 0.08);
+      border-color: #95d1d1;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+      color: #1f8f8f;
+    }
+
+    .feature-title {
+      font-weight: 620;
+      font-size: 1.1rem;
+      letter-spacing: 0.01em;
+      color: #124e4e;
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-desc {
+      font-size: 0.92rem;
+      color: #2b545a;
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    /* 温和结尾 + 小提示区域 */
+    .gentle-footer {
+      background: #eaf6f6;
+      border-radius: 28px;
+      padding: 2rem 2rem 1.8rem;
+      margin-top: 2.2rem;
+      border-top: 3px solid #60bdbd;
+    }
+
+    .gentle-footer h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #0d4f4f;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .gentle-footer p {
+      font-size: 0.98rem;
+      color: #1d4248;
+      margin-bottom: 0.8rem;
+    }
+
+    .faq-mini {
+      background: #ffffffcc;
+      padding: 1rem 1.4rem;
+      border-radius: 20px;
+      margin: 1.2rem 0 0.6rem;
+      border-left: 4px solid #369b9b;
+    }
+
+    .faq-mini dt {
+      font-weight: 600;
+      color: #094a4a;
+      margin-top: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini dd {
+      margin-left: 0.4rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.92rem;
+      color: #25555c;
+      padding-left: 0.6rem;
+      border-left: 2px solid #a7d5d5;
+    }
+
+    .faq-mini dt:first-of-type {
+      margin-top: 0;
+    }
+
+    .footer-note {
+      text-align: right;
+      font-size: 0.85rem;
+      margin-top: 1.6rem;
+      color: #4b8585;
+      border-top: 1px solid #b0d9d9;
+      padding-top: 1rem;
+    }
+
+    /* 按钮式链接（非跳转大词） */
+    .link-sentence {
+      margin: 1.2rem 0 0.4rem;
+      font-size: 1rem;
+    }
+
+    .link-sentence a {
+      color: #157575;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid #6fc2c2;
+      padding-bottom: 1px;
+    }
+
+    .link-sentence a:hover {
+      color: #0a5858;
+      border-bottom-color: #0a5858;
+    }
+
+    /* 移动端优化 */
+    @media (max-width: 500px) {
+      body {
+        padding: 16px 12px 32px;
+      }
+
+      .opening {
+        font-size: 1.6rem;
+      }
+
+      .intro {
+        padding: 1.2rem;
+        border-left-width: 4px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .gentle-footer {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .faq-mini {
+        padding: 0.8rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 开场短句 蓝绿色调渐变 -->
+  <div class="opening">
+    <em>一次浏览，清晰就绪</em>
+  </div>
+
+  <!-- 承接段落：简明指南 & 访问提醒 -->
+  <div class="intro">
+    <p>当你准备探索 <a href="https://m-main-1xbet.com">1xbet</a> 平台时，一份轻量的路线图能让整个过程更加流畅。以下是从访问准备到基础使用的几个关键节点，适合新用户快速建立认知。</p>
+    <p>平台面向多元用户群体，覆盖体育赛事、电子竞技及实时博弈内容。无论你关注赛事赔率还是界面逻辑，事先了解基本规则与安全访问方式都很有必要。官方移动端适配良好，但建议保持稳定的网络连接，并留意当地法规对在线娱乐的界定。</p>
+  </div>
+
+  <!-- 特点列表 (网格卡片) -->
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-title">简洁注册</div>
+      <div class="feature-desc">只需电子邮箱或手机号，配合基础信息即可创建账户。流程经过优化，通常在几分钟内完成。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title">移动优先</div>
+      <div class="feature-desc">响应式界面在手机与平板上依然清晰。无需额外下载，浏览器直接加载核心功能。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">支付入口</div>
+      <div class="feature-desc">支持多种本地支付方式及加密货币通道。存款与提现均有明确限额与处理时效。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧭</div>
+      <div class="feature-title">赛事筛选</div>
+      <div class="feature-desc">按联赛、时间、热门程度分类，可快速定位心仪比赛。赔率变动有实时提示。</div>
+    </div>
+  </div>
+
+  <!-- 温和结尾 + FAQ 摘要 + 场景提示 -->
+  <div class="gentle-footer">
+    <h3>📘 日常使用提醒</h3>
+    <p>第一次登录后，建议先浏览“设置”中的通知偏好与限额选项。合理分配时间，避免过度投入。若遇到访问延迟，优先检查本地网络或尝试更换浏览器。</p>
+
+    <div class="faq-mini">
+      <dl>
+        <dt>问：是否需要开启特殊权限？</dt>
+        <dd>通常不需要。平台以标准HTTPS协议运行，浏览器会正常加载。若页面提示“不安全”，请核对网址是否为 <a href="https://m-main-1xbet.com" style="color:#157575; text-decoration:underline;">1xbet</a> 官方域名。</dd>
+        <dt>问：账户安全措施有哪些？</dt>
+        <dd>建议启用双重验证，并定期更改密码。避免在公共设备上保存登录信息。官方客服仅通过站内消息或认证邮件联系用户。</dd>
+        <dt>问：移动端体验与桌面端差异大吗？</dt>
+        <dd>核心功能一致，但移动端布局更侧重竖屏操作。投注单、账户余额及赛事列表均以卡片形式呈现，单手可完成大部分操作。</dd>
+      </dl>
+    </div>
+
+    <div class="link-sentence">
+      <span>如果你还想回顾 <a href="https://m-main-1xbet.com">1xbet</a> 的界面布局或功能分类，可直接从移动浏览器打开。</span>
+    </div>
+
+    <div class="footer-note">
+      保持信息透明 · 理性参与 · 本页仅为访问指引
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
